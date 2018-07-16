@@ -8,6 +8,7 @@ public class Payment {
 	private String cvv;
 	private int id;
 	private String authId;
+	private float authAmount;
 	public String getCardNumber() {
 		return cardNumber;
 	}
@@ -43,6 +44,12 @@ public class Payment {
 	}
 	public void setAuthId(String authId) {
 		this.authId = authId;
+	}
+	public float getAuthAmount() {
+		return authAmount;
+	}
+	public void setAuthAmount(float authAmount) {
+		this.authAmount = authAmount;
 	}
 
 }
