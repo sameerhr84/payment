@@ -21,7 +21,7 @@ public class PaymentController {
     }
 	
 	@RequestMapping("/authorizepayment")
-    public  Payment  authorizepayment(@RequestParam(value="id") String id) {
+    public  Payment  authorizepayment(@RequestParam(value="id") Integer id) {
 		Payment payment=PaymentApplication.payments.get(id);
 		payment.setAuthId(payment.getId()*12+"");
 		return payment;
